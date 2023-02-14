@@ -26,7 +26,7 @@ def find_mismatch(text):
 
 def main():
     file_input = input()
-    if file_input == "I":  
+    if file_input in "I":  
         text = input()
     mismatch = find_mismatch(text)
     print(mismatch)
