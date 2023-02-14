@@ -19,16 +19,15 @@ def find_mismatch(text):
                 return i + 1
             elif not are_matching(opening_brackets_stack[-1].char, next):
                 return i + 1
-            else:
-                opening_brackets_stack.pop()
+            opening_brackets_stack.pop()
     if opening_brackets_stack:
         return opening_brackets_stack[0].position
     return "Success"
 
 def main():
     file_input = input()
-    if file_input == "I":
-       text = input()
+    if file_input == "I":  
+        text = input()
     mismatch = find_mismatch(text)
     print(mismatch)
 if __name__ == "__main__":
