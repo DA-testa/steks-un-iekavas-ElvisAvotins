@@ -1,5 +1,5 @@
 #Elvis Avotiņš 7.grupa 220RX0898
-import re
+
 from collections import namedtuple
 
 Bracket = namedtuple("Bracket", ["char", "position"])
@@ -27,7 +27,6 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    # brackets_only = re.sub(r'[^\[\]\{\}\(\)]', '', text)
     mismatch = find_mismatch(text)
     print(mismatch)
 if __name__ == "__main__":
