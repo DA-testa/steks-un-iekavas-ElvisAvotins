@@ -26,7 +26,7 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    if text in "I":
+    if text.lower().startswith("i\r"): 
         text = text.strip(" \r\n")
     mismatch = find_mismatch(text)
     print(mismatch)
