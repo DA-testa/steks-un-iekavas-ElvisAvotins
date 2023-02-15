@@ -26,8 +26,8 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    if text.lower().startswith("i\r"): 
-        text = text.strip(" \r\n")
+    if text.lower().startswith("i"): 
+        text = input()
     mismatch = find_mismatch(text)
     print(mismatch)
 if __name__ == "__main__":
