@@ -25,9 +25,9 @@ def find_mismatch(text):
     return "Success"
 
 def main():
-    file_input = input()
-    if file_input in "Ii":  
-        text = input()
+    text = input()
+    if text in "I":
+        text = text.strip(" \r\n")
     mismatch = find_mismatch(text)
     print(mismatch)
 if __name__ == "__main__":
